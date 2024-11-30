@@ -1,0 +1,46 @@
+{
+  "name": "@graph-full-stack/client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "yarn parcel src/index.html --no-cache",
+    "test": "echo 'no client-side tests yet'",
+    "type-check": "tsc -p .",
+    "build": "yarn parcel build  --dist-dir dist src/index.html",
+    "codegen": "graphql-codegen --config codegen.yml",
+    "clean": "yarn rimraf dist"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.11.10",
+    "@fortawesome/fontawesome-free": "^6.7.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.0",
+    "@fortawesome/free-brands-svg-icons": "^6.7.0",
+    "@fortawesome/free-regular-svg-icons": "^6.7.0",
+    "@fortawesome/free-solid-svg-icons": "^6.7.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@graph-full-stack/shared": "^1.0.0",
+    "add": "^2.0.6",
+    "date-fns": "^4.1.0",
+    "graphql": "^16.9.0",
+    "graphql-tag": "^2.12.6",
+    "react-error-boundary": "^4.1.2",
+    "yarn": "^1.22.22"
+  },
+  "peerDependencies": {
+    "@parcel/core": "^2.13.2"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.3",
+    "@graphql-codegen/introspection": "4.0.3",
+    "@graphql-codegen/typescript": "4.1.2",
+    "@graphql-codegen/typescript-operations": "4.4.0",
+    "@graphql-codegen/typescript-react-apollo": "4.3.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "parcel": "^2.13.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@graph-full-stack/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo 'no shared tests yet'",
+    "build": "tsc",
+    "clean": "yarn rimraf dist",
+    "dev": "tsc --watch --preserveWatchOutput"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
+}
